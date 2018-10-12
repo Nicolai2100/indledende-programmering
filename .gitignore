@@ -1,0 +1,5 @@
+Tilføj en fil, og kald den .gitignore - skriv navne på filer/mapper du ikke vil dele med git
+
+out
+.idea
+IndledendeProgrammering.iml
