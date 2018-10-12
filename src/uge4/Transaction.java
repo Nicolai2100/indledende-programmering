@@ -7,9 +7,15 @@ public class Transaction {
     //-----------------------------------------------------------------
     public static void main (String[] args)
     {
-        Account acct1 = new Account ("Ted Murphy", 72354, 102.56);
-        Account acct2 = new Account ("Jane Smith", 69713, 40.00);
-        Account acct3 = new Account ("Edward Demsey", 93757, 759.32);
+        Address address1 = new Address("Høgevej 3", "Rønnede", "Danmark", 4683);
+        Account acct1 = new Account ("Ted Murphy", 72354, 102.56, address1);
+
+        Address address2 = new Address("Bøgevej 2", "Bøgedal", "Danmark", 3622);
+        Account acct2 = new Account ("Jane Smith", 69713, 40.00, address2);
+
+        Address address3 = new Address("Kløvervej 3", "Kvøledal", "Danmark", 9922);
+        Account acct3 = new Account ("Edward Demsey", 93757, 759.32, address3);
+
         acct1.deposit (25.85);
         double smithBalance = acct2.deposit (500.00);
         System.out.println ("Smith balance after deposit: " +
@@ -23,5 +29,7 @@ public class Transaction {
         System.out.println (acct1);
         System.out.println (acct2);
         System.out.println (acct3);
+
+        acct1.transfer(5,acct3);
     }
 }
