@@ -8,13 +8,19 @@ public class Transaction {
     public static void main (String[] args)
     {
         Address address1 = new Address("Høgevej 3", "Rønnede", "Danmark", 4683);
-        Account acct1 = new Account ("Ted Murphy", 72354, 102.56, address1);
+        Account acct1 = new Account ("Ted Murphy", 72354);
+        acct1.setBalance(102.56);
+        acct1.setAddress(address1);
 
         Address address2 = new Address("Bøgevej 2", "Bøgedal", "Danmark", 3622);
-        Account acct2 = new Account ("Jane Smith", 69713, 40.00, address2);
+        Account acct2 = new Account ("Jane Smith", 69713);
+        acct2.setBalance(40.00);
+        acct2.setAddress(address2);
 
         Address address3 = new Address("Kløvervej 3", "Kvøledal", "Danmark", 9922);
-        Account acct3 = new Account ("Edward Demsey", 93757, 759.32, address3);
+        Account acct3 = new Account ("Edward Demsey", 93757);
+        acct3.setBalance(759.32);
+        acct3.setAddress(address3);
 
         acct1.deposit (25.85);
         double smithBalance = acct2.deposit (500.00);

@@ -10,8 +10,10 @@ public class Banking {
     Bemærk, at overførslen kan beskrives som udtræk fra en konto og indsættelse i en anden.
 
     Skriv ligeledes Transaction klassen om, så den kan vise denne nye mulighed.
+
     Skriv Account klassen om så den kan åbnes blot med et navn og et kontonummer,
     idet indestående forudsættes at være 0.
+
     Skriv ligeledes Transaction klassen om, så denne nye mulighed bliver brugt.
             ( Denne opgave kan med fordel løses ved at lave en ny konstruktør.)
     Du må gerne besvare spørgsmål. 1, 3 og 4 i samme par filer: Transaction.java og Account.java,

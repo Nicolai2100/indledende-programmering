@@ -10,7 +10,7 @@ public class Account {
 
     private final double RATE = 0.035; // interest rate of 3.5%
     private long acctNumber;
-    private double balance;
+    private double balance = 0.0;
     private String name;
     private String streetAddress;
     private String city;
@@ -22,22 +22,22 @@ public class Account {
     // Sets up the account by defining its owner, account number,
     // and initial balance.
     //-----------------------------------------------------------------
-    public Account (String owner, long account, double initial, Address address)
+    public Account (String owner, long account)
     {
         name = owner;
         acctNumber = account;
-        balance = initial;
-        this.address = address;
 
     }
 
     public void transfer (double amount, Account acctNumber)
     {
+        NumberFormat fmt = NumberFormat.getCurrencyInstance();
         double overført = amount;
         balance = balance - amount;
-        System.out.println(name +" har overført "+ amount + " kroner til " + acctNumber.name +". Nuværende balance: "+ balance);
+        System.out.println(name +" har overført "+ fmt.format(amount) + " kr til " +
+                acctNumber.name +". " + name + "'s nuværende balance: "+ fmt.format(balance));
         acctNumber.balance = acctNumber.balance + amount;
-        System.out.println(acctNumber.name + "'s balance er nu " + acctNumber.balance + "kr.");
+        System.out.println(acctNumber.name + "'s balance er nu " + fmt.format(acctNumber.balance) + " kr.");
     }
 
     //-----------------------------------------------------------------
@@ -84,4 +84,11 @@ public class Account {
         return acctNumber + "\t" + name + "\t" + fmt.format(balance);
     }
 
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
 }
