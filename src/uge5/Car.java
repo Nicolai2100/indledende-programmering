@@ -18,14 +18,25 @@ public class Car {
     {
         return "["+ licensPlate +"]" + color + brand;
     }
-    public boolean equals(Car otherCar)
-    {   if (licensPlate.contentEquals(otherCar.licensPlate)) {
+
+    public boolean equals(Car otherCar){
+        return licensPlate.equals(otherCar.licensPlate);
+    }
+    /*
+    public boolean equals(Car otherCar) {
+        if (licensPlate.contentEquals(otherCar.licensPlate)) {
             return true;
         }
         else {
             return false;
         }
     }
+    */
+
+    public boolean alike(Car otherCar){
+        return brand.equals(otherCar.brand) && color.equals(otherCar.color)
+    }
+    /*
     public boolean alike(Car otherCar){
         if (color.contentEquals(otherCar.color)){
             return true;
@@ -34,6 +45,7 @@ public class Car {
             return false;
         }
     }
+    */
 
     public String getBrand() {
         return brand;
