@@ -1,7 +1,13 @@
 package uge5;
 
-public class Bonus_ModifiersB1 {
+public class ModifierTest {
 
+    private String string1 = "";
+    protected String string2 = "";
+    public String string3 = "";
+    public String string4 = "";
+    public static String string5 = "";
+    private final String STRING6 = "";
 
 /*    Skriv en klasse
 

@@ -1,13 +1,25 @@
 package uge5;
 
-public class Bonus_ModifiersB2 {
+public final class Singleton K{
 
+    private String single;
 
+    private Singleton()
+    {
+
+    }
+
+    public String getString()
+    {
+        return single;
+    }
+    public void setString(String string)
+    {
+        single = string;
+    }
     /*Skriv en Singleton klasse. En singleton klasse garanterer at der aldrig er
     mere end ét instans af klassen. Dette opnås ved at konstruktøren gøres
     utilgængelig fra andre klasser og at der i stedet skrives en
-
-
     getInstance()
     metode, der returnerer det unikke instance.
     Denne singleton skal hedde Singleton og have en getString() og en setString() metode.

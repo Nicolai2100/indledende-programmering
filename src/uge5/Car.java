@@ -3,72 +3,47 @@ package uge5;
 public class Car {
 
     private String color;
-    private String licensPlate;
+    private String licenseplate;
     private String brand;
     //private boolean equalsBoolean = false;
 
-    public Car(String color, String licensPlate, String brand)
+    public Car(String brand, String licenseplate, String color)
     {
         this.color = color;
-        this.licensPlate = licensPlate;
+        this.licenseplate = licenseplate;
         this.brand = brand;
     }
 
     public String toString()
     {
-        return "["+ licensPlate +"]" + color + brand;
+        return "["+ licenseplate +"] " + color + " " + brand ;
     }
 
     public boolean equals(Car otherCar){
-        return licensPlate.equals(otherCar.licensPlate);
+        return licenseplate.equals(otherCar.licenseplate);
     }
-    /*
-    public boolean equals(Car otherCar) {
-        if (licensPlate.contentEquals(otherCar.licensPlate)) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-    */
 
     public boolean alike(Car otherCar){
-        return brand.equals(otherCar.brand) && color.equals(otherCar.color)
+        return brand.equals(otherCar.brand) && color.equals(otherCar.color);
     }
-    /*
-    public boolean alike(Car otherCar){
-        if (color.contentEquals(otherCar.color)){
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-    */
 
     public String getBrand() {
         return brand;
     }
-
     public void setBrand(String brand) {
         this.brand = brand;
     }
-
     public String getColor() {
         return color;
     }
-
     public void setColor(String color) {
         this.color = color;
     }
-
-    public String getLicensPlate() {
-        return licensPlate;
+    public String getLicenseplate() {
+        return licenseplate;
     }
-
-    public void setLicensPlate(String licensPlate) {
-        this.licensPlate = licensPlate;
+    public void setLicenseplate(String licensPlate) {
+        this.licenseplate = licensPlate;
     }
 
     /*    Hver bil i et register har følgende data:
