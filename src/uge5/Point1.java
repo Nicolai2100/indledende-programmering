@@ -1,3 +1,5 @@
+package uge5;
+
 public class Point1 {
 
     /*Skriv en klasse
