@@ -1,6 +1,6 @@
 package uge5;
 
-public final class Singleton K{
+public final class Singleton{
 
     private String single;
 
@@ -8,6 +8,12 @@ public final class Singleton K{
     {
 
     }
+
+    public Singleton getInstance(){
+
+        return Singleton.this;
+    }
+
 
     public String getString()
     {
