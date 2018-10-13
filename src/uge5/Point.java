@@ -13,17 +13,22 @@ public class Point {
     {
         return "(" + x + "," + y + ")";
     }
-    //public boolean equals(Point p)
+    public boolean equals(Point p)
     {
-        //getX().
-        /*return true;
+        int herX = getX();
+        int herY = getY();
 
-        return false;*/
+        if (herX == p.x && herY == p.y)
+        return true;
+
+        else
+        return false;
     }
     public void move(int dx, int dy)
     {
         //Flytter punkterne
-
+        setX(x+dx);
+        setY(y+dy);
     }
 
     public int getX() {
@@ -32,6 +37,14 @@ public class Point {
 
     public void setX(int x) {
         this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public int getY() {
+        return y;
     }
     /*
     Lav en klasse Point, der repræsenterer punkter i et koordinatsystem (x,y).
