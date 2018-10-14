@@ -1,14 +1,15 @@
 package uge6;
 
 import java.math.BigDecimal;
+import java.math.MathContext;
 import java.util.Scanner;
 import java.util.Arrays;
+
+import static java.lang.StrictMath.round;
 
 public class Middelværdi {
 
     public static void main(String[] args) {
-
-
         //Get input
         Scanner scan = new Scanner(System.in);
         //Get string input
@@ -40,7 +41,8 @@ public class Middelværdi {
         double newSD = Math.sqrt((standardDeviation/(integers.length)));
 
         System.out.println("Mean: " + mean);
-        System.out.print("Standard deviation: " +newSD);
+        System.out.print("Standard deviation: " +String.format("%.14f", newSD));
+
     }
 }
 /*Opgave
