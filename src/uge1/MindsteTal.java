@@ -1,7 +1,7 @@
 package uge1;
 
 import java.util.Scanner;
-import java.io.*;
+
 import java.util.Arrays;
 
 public class MindsteTal {

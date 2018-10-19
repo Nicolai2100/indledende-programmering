@@ -8,18 +8,19 @@ public class Matrix{
         int [][] b={{1,1,1}, // 0. row
                 {1,1,1}}; // 1. row
         int[][] c;
-        printmatrix(a);
-        printmatrix(b);
+        //printmatrix(a);
+        //printmatrix(b);
         if (a[0].length==b.length){
             // column length in "a" is same as
             // row length in "b"
-            c= multi(a,b);
-            printmatrix(c);
+            //c= multi(a,b);
+            //printmatrix(c);
         } else{
             System.out.print("matrixmultiplikation kan ikke udføres");
         }
     }
 }
+
 
 /*Klassen Matrix multiplicerer 2 matricer og udskriver resultatet.
  Skriv de statiske metoder printMatrix(…) og multiplication(…).
