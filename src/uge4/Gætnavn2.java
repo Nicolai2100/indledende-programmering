@@ -1,3 +1,5 @@
+package uge4;
+
 import java.util.Scanner;
 
 public class Gætnavn2 {

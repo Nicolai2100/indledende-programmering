@@ -1,3 +1,5 @@
+package uge4;
+
 public class Pyramider22 {
     public static void main(String[] args) {
 

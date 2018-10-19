@@ -1,3 +1,5 @@
+package uge4;
+
 public class RepræsentationAfData {
 
 /*
