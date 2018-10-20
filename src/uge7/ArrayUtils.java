@@ -1,6 +1,7 @@
 package uge7;
 
 public class ArrayUtils {
+
     static int sumOfArray = 0;
     static int occurenceResult = 0;
     static String arrayString = "";
@@ -34,8 +35,6 @@ public class ArrayUtils {
         }
         return sumOfArray;
     }
-
-
     /*Denne opgave går ud på at lave nogle simple operationer på
      integer-tabeller i form af en klasse ArrayUtils. Alle metoderne
       i klassen skal erklæres public og static.

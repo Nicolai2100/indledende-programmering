@@ -1,15 +1,31 @@
 package uge7;
 
 public class Matrix{
+    static String printMatrixString = "";
+
+    public static void printmatrix(int a[][]){
+        for (int index = 0; index < a.length; index++){
+            printMatrixString += a[index][index]+"\n"+a[0][0];
+        }
+        System.out.println(printMatrixString);
+    }
+
+    public static int printMatrix(){
+        return 2;
+    }
 
     public static void main(String[] args){
-        int [][] a={{1,2}, // 0. row
-                {3,1}}; // 1. row
-        int [][] b={{1,1,1}, // 0. row
+        int [][] a = {{1,2}, // 0. row
+                     {3,1}}; // 1. row
+
+        int [][] b = {{1,1,1}, // 0. row
                 {1,1,1}}; // 1. row
+
         int[][] c;
-        //printmatrix(a);
+
+        printmatrix(a);
         //printmatrix(b);
+
         if (a[0].length==b.length){
             // column length in "a" is same as
             // row length in "b"
@@ -20,8 +36,6 @@ public class Matrix{
         }
     }
 }
-
-
 /*Klassen Matrix multiplicerer 2 matricer og udskriver resultatet.
  Skriv de statiske metoder printMatrix(…) og multiplication(…).
   Vedlagt er starten på Matrix klassen Hint: Rækkeantal for matricen a er
