@@ -1,17 +1,32 @@
 package uge7;
 
 public class Matrix{
-    static String printMatrixString = "";
+    static String printMatrixLine1String = "";
+    static String printMatrixLine2String = "";
 
-    public static void printmatrix(int a[][]){
-        for (int index = 0; index < a.length; index++){
-            printMatrixString += a[index][index]+"\n"+a[0][0];
+    public static void printmatrix(int [][] a) {
+        {
+            // Loop through all rows
+            for (int i = 0; i < a.length; i++)
+
+                // Loop through all elements of current row
+                for (int j = 0; j < a[i].length; j++)
+                    System.out.print(a[i][j] + " ");
+            System.out.println();
         }
-        System.out.println(printMatrixString);
     }
+    public static int[][] multi(int a[][], int b[][]){
+        int c[][] = {{0,0,0},{0,0,0}};
+        //x [rows] [colums]
+        c[0][0] = (a[0][0] * b[0][0]) + (a[0][1] * b[1][0]);
+        c[0][1] = (a[0][0] * b[0][1]) + (a[0][1] * b[1][1]);
+        c[0][2] = (a[0][0] * b[0][2]) + (a[0][1] * b[1][2]);
 
-    public static int printMatrix(){
-        return 2;
+        c[1][0] = (a[1][0] * b[0][0]) + (a[1][1] * b[1][0]);
+        c[1][1] = (a[1][0] * b[0][1]) + (a[1][1] * b[1][1]);
+        c[1][2] = (a[1][0] * b[0][2]) + (a[1][1] * b[1][2]);
+
+        return c;
     }
 
     public static void main(String[] args){
@@ -24,13 +39,13 @@ public class Matrix{
         int[][] c;
 
         printmatrix(a);
-        //printmatrix(b);
+        printmatrix(b);
 
-        if (a[0].length==b.length){
+        if (a[0].length == b.length){
             // column length in "a" is same as
             // row length in "b"
-            //c= multi(a,b);
-            //printmatrix(c);
+            c = multi(a,b);
+            printmatrix(c);
         } else{
             System.out.print("matrixmultiplikation kan ikke udføres");
         }
