@@ -3,6 +3,7 @@ package uge6;
 public class Test{
 
     public static void main(String[] args) {
+//Hej fra konflikt
 //Hej fra master
         Car2 car1 = new Car2("Toyota", "AB 223", "Rød");
         System.out.println(car1.getRegno());
