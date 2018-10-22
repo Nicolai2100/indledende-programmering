@@ -7,7 +7,7 @@ public class ModifierTest {
     public String string3 = "";
     public String string4 = "";
     public static String string5 = "";
-    private final String STRING6 = "";
+    private final String string6 = "to";
 
 /*    Skriv en klasse
 

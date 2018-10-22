@@ -12,7 +12,7 @@ public class Cinema {
   række 2 og tre på række 3 og 4. Klassen skal have følgende metoder:
 
 · int rows()  -giver antal rækker i biografen.
-· int seatsOnRow(int row) - giver antal sæder på række row.
+· int seatsOnRow(int row) - giver antal sæder  på række row.
 · int seats() totalt giver antal sæder i biografen.
 · int rowVacancies(int row) giver antal ledige pladser på række row.
 · int vacancies() giver det samlede antal ledige pladser i biografen.
