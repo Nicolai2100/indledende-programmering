@@ -2,26 +2,25 @@ package uge5;
 
 public final class Singleton{
 
-    private String single;
+    private static Singleton instance = new Singleton();
+    private String string;
 
     private Singleton()
     {
-
     }
 
     public Singleton getInstance(){
-
-        return Singleton.this;
+        return instance;
     }
 
 
     public String getString()
     {
-        return single;
+        return this.string;
     }
     public void setString(String string)
     {
-        single = string;
+        this.string = string;
     }
     /*Skriv en Singleton klasse. En singleton klasse garanterer at der aldrig er
     mere end ét instans af klassen. Dette opnås ved at konstruktøren gøres
