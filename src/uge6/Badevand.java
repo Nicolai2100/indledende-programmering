@@ -1,7 +1,5 @@
 package uge6;
 
-import java.util.Arrays;
-
 public class Badevand {
     static int max;
     static int antalFald;
