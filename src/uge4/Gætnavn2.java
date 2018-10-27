@@ -52,6 +52,6 @@ public class Gætnavn2 {
                 }
            // }
         }
-        while(nameFound == false);
+        while(!nameFound);
     }
 }

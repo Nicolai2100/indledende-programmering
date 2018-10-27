@@ -2,7 +2,7 @@ package Uge3;
 
 import java.util.Scanner;
 
-public class Passwordchecker2 {
+public class Passwordchecker {
 
     public static void main(String[] args) {
 /*
