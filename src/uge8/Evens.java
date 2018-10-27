@@ -32,10 +32,5 @@ public class Evens {
 
 		return numberOfEvens;
 	}
-	public String toString(){
-
-		String printString = "";
-		return printString;
-	}
 
 }
