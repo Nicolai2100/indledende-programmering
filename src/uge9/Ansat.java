@@ -18,6 +18,6 @@ public class Ansat extends Person{
 
     @Override
     public String toString() {
-        return super.toString()+ "";
+        return super.toString()+ "\n\t[institutnavn="+getInstitutnavn()+"]";
     }
 }
