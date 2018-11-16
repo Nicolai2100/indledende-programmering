@@ -8,7 +8,7 @@ class Person {
     }
 
     public String toString(){
-        return "Person\n\t[navn="+getNavn()+"]";
+        return "class "+ getClass().getName() +"\n\t[navn="+getNavn()+"]";
 
     //Hvor Tap skal erst
     }
@@ -88,21 +88,13 @@ class Tap extends Ansat {
         super(navn, institutnavn);
         kurser = kursus;
     }
-
-    /*public String printKurser(){
-        String returnString;
-        for (int i = 0; i < kurser.length; i++) {
-            returnString =+ (kurser[i].to"]");
-        }
-        return
-    }
-    */
     @Override
     public String toString() {
         //For alle kurser!
-        return super.toString() + "\n\t[kursus="+kurser[0]+"]"+ "\n\t[kursus="+kurser[1]+"]"
-                + "\n\t[kursus="+kurser[2]+"]" + "\n\t[kursus="+kurser[3]+"]";
-
-
+        String returnS = super.toString() + "\n\t";
+        for (String kurser:kurser) {
+            returnS += "[kursus="+kurser+"]"+ "\n\t";
+        }
+        return returnS;
     }
 }
