@@ -17,7 +17,11 @@ public class Grund {
 
         return vurdering;
     }
+    public String toString(){
+        String result = "Areal: "+ areal + ", kvadratmeterpris: " + kvadratmeterpris + " , byggeret: " + byggeret;
 
+        return result;
+    }
 }
 class ForurenetGrund extends Grund {
     private int fradrag;
@@ -28,13 +32,17 @@ class ForurenetGrund extends Grund {
     }
     @Override
     public int vurdering() {
-        int vurdering = super.vurdering();
-        int nyVurdering = (vurdering - this.fradrag);
+        int nyVurdering = (kvadratmeterpris * areal)+byggeret-fradrag;
         return nyVurdering;
     }
 
     public void sætFradrag(int fradrag){
-        this.fradrag = this.fradrag -fradrag;
+        this.fradrag = fradrag;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", fradrag: " +fradrag;
     }
 
     public static void main(String[] args) {
