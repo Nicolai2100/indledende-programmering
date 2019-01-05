@@ -1,11 +1,10 @@
-import uge12.ReadFile;
-import uge9.*;
+import FørsteSemester.uge12.ReadFile;
 
 public class Main {
     public static void main(String[] args) {
 
         ReadFile read = new ReadFile();
-        read.openFile(".\\src\\uge12\\data");
+        read.openFile(".\\src\\FørsteSemester.uge12\\data");
         int[]ints1 = read.readInts();
         int[]ints2 = read.readInts();
 
