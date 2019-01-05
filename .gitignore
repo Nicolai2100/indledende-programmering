@@ -2,4 +2,4 @@ Tilføj en fil, og kald den .gitignore - skriv navne på filer/mapper du ikke vi
 
 out
 .idea
-indledendeProgrammering.iml
+*.iml
