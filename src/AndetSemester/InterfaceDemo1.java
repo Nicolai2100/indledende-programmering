@@ -4,14 +4,15 @@ interface ABC{
 
     void show();
 }
-public class OuterClass {
+public class InterfaceDemo1 {
+    //outer class
     int a = 5;
 
     void show() {
         System.out.println(a);
     }
 }
-    class InnerClass extends OuterClass{
+    class InnerClass extends InterfaceDemo1 {
 
         void show(){
             System.out.println("Sniksnak");
@@ -19,15 +20,15 @@ public class OuterClass {
 
     public static void main(String[] args) {
         //Outer class
-        OuterClass A = new OuterClass();
+        InterfaceDemo1 A = new InterfaceDemo1();
         A.show();
 
         //Inner class
-        OuterClass B = new InnerClass();
+        InterfaceDemo1 B = new InnerClass();
         B.show();
 
         //Inner anonymous class
-        OuterClass A2 = new OuterClass(){
+        InterfaceDemo1 A2 = new InterfaceDemo1(){
             void show(){
                 System.out.println("I am the best!");
             }
