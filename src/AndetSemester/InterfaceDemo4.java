@@ -1,6 +1,6 @@
 package AndetSemester;
 
-interface Demo3 {
+interface Demo4 {
     //Variabler i interfacer bliver permanente/final
     int i = 8;
 
@@ -21,6 +21,6 @@ class DemoImplement3 implements Demo3 {
 public class InterfaceDemo4 {
 
     public static void main(String[] args) {
-        Demo3.show();
+        Demo4.show();
     }
 }

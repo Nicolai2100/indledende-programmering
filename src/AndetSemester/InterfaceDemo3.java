@@ -4,7 +4,7 @@ package AndetSemester;
 //Interface -> declare
 // 1.8 can define methods in interfaces
 @FunctionalInterface
-interface Demo
+interface Demo3
 {
     //Max én abstract metode i funktionel interface.
     void abc();
