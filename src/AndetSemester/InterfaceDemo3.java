@@ -10,19 +10,36 @@ interface Demo
     void abc();
     default void show()
     {
-        System.out.println("in show");
+        System.out.println("in Demo3-show");
     }
 }
-
-class DemoImplent implements Demo{
-    public void abc(){
-        System.out.println("in abc");
+interface MyDemo {
+    default void show()
+    {
+        System.out.println("in MyDemo-show");
     }
 
+   public class DemoImplent implements Demo3, MyDemo{
+        public void abc(){
+            System.out.println("in abc");
+        }
+       @Override
+       public void show() {
+//overrider de nedarvede metoder, for at undgå ambivalens.
+           Demo3.super.show();
+           }
+
+        //En anden måde at gøre det på!
+        //@Override
+        //public void show() {
+//overrider de nedarvede metoder, for at undgå ambivalens.
+        //    System.out.println("In DemoImplement3 Show");
+        //}
+    }
 }
 public class InterfaceDemo3 {
     public static void main(String[] args) {
-        Demo obj = new DemoImplent();
+        Demo3 obj = new MyDemo.DemoImplent();
         obj.show();
         obj.abc();
     }
