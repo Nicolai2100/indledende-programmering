@@ -10,7 +10,7 @@ interface ABC2 {
     void show();
 }
 
-public class InterfaceDemo2 {
+public class InterfaceDemo_2 {
 
     public static void main(String[] args) {
         //Lambda udtryk for implementering af interfacen

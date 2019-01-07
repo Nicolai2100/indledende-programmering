@@ -19,7 +19,7 @@ interface MyDemo {
         System.out.println("in MyDemo-show");
     }
 
-   public class DemoImplent implements Demo3, MyDemo{
+    class DemoImplent implements Demo3, MyDemo{
         public void abc(){
             System.out.println("in abc");
         }
@@ -37,7 +37,7 @@ interface MyDemo {
         //}
     }
 }
-public class InterfaceDemo3 {
+public class InterfaceDemo_3 {
     public static void main(String[] args) {
         Demo3 obj = new MyDemo.DemoImplent();
         obj.show();

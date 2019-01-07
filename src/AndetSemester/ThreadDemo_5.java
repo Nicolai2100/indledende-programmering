@@ -19,7 +19,7 @@ class Hello extends Thread{
         }
     }
 }
-public class ThreadDemo {
+ class ThreadDemoX {
     public static void main(String[] args) {
         Hi obj1 = new Hi();
         Hello obj2 = new Hello();

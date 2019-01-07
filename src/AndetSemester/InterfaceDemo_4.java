@@ -10,7 +10,7 @@ interface Demo4 {
     }
 }
 
-class DemoImplement3 implements Demo3 {
+class DemoImplement4 implements Demo4 {
 
     @Override
     public void abc() {
@@ -18,7 +18,7 @@ class DemoImplement3 implements Demo3 {
     }
 }
 
-public class InterfaceDemo4 {
+public class InterfaceDemo_4 {
 
     public static void main(String[] args) {
         Demo4.show();
